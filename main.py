@@ -1,12 +1,13 @@
-#Tutorial zur Nutzung der REST-Schnittstellen von wdb+ am Beispiel des Projekts Religiöse Friedenswahrung und Friedensstiftung in Europa
+# Tutorial zur Nutzung der REST-Schnittstellen von wdb+ am Beispiel des Projekts Religiöse Friedenswahrung und Friedensstiftung in Europa
+
+import urllib.request
 
 # Wie in Python üblich müssen zunächst die notwendigen Pakete installiert werden.
 # Hier zunächst das Paket requests. Dieses Paket muss meist separat installiert werden.
 # # Dieser Schritt wird nicht in diesem Tutorial behandelt!
 import requests as r
-import urllib.request
 
-#GLOBALE Variable URL festgelegt
+# GLOBALE Variable URL festgelegt
 URL = "https://exist.ulb.tu-darmstadt.de:8443/exist/restxq/edoc"
 
 # Mithilfe von requests führen wir einen get-request aus, der uns alle Einträge aus der collection unter der id "religionsfrieden" ausgibt
@@ -20,13 +21,8 @@ response = r.get(url=f"{URL}/collection/religionsfrieden.json")
 response.raise_for_status()
 #Diese Zeile speichert den Inhalt der response als Variable data
 data = response.json()
-
-
 # Hier könnte data ausgegeben werden. i.e. das dictionary, das aus den Einträgen '@id' und 'resources' besteht.
 # print(data)
-
-
-
 
 
 def get_all_texts():
