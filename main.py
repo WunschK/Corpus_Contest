@@ -5,7 +5,7 @@ import requests as r
 
 # Wie in Python üblich müssen zunächst die notwendigen Pakete installiert werden.
 # Hier das Paket requests. Dieses Paket muss meist separat installiert werden.
-# # Dieser Schritt wird nicht in diesem Tutorial behandelt!
+# # Dieser Schritt wird nicht in diesem Tutorial behandelt! Genauere Informationen zum Installieren von Paketen findest du hier:https://packaging.python.org/tutorials/installing-packages/
 
 
 # GLOBALE Variable URL festgelegt - Globale Variablen werden all-caps geschrieben. Diese vermeiden Wiederholungen im Code.
